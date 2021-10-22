@@ -14,6 +14,14 @@ coordinates of hot pixels, transform the Slave image, get the
 correspondent pixel value from the Slave image, and replace the
 saturated information of the hot pixels.  
 
+#Usage in mac/linux
+./multicam with no arguments prompt help. Usage:
+./multicam <path> <MasterCam_image> <SlaveCam_image> <configfile>"<< std::endl;
+        <path> is the working path of the input and output files.
+        <MasterCam_image> is the picture in .tif or .fit format in where the pixel value with coordinates from <hotpixels_file> will be replaced with the pixel values of the same coordinates from the <SlaveCam_image>.
+        <SlaveCam_image> is the picture in .tif or .fit format to use to correct the values in the picture from the Master Cammera."
+        <configfile> is the config file where registration points are stored."
+
 #Windows install:
 
 This program compiles with Visual Studio 2019. 
