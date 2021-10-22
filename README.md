@@ -20,7 +20,17 @@ saturated information of the hot pixels.
         <path> is the working path of the input and output files.
         <MasterCam_image> is the picture in .tif or .fit format in where the pixel value with coordinates from <hotpixels_file> will be replaced with the pixel values of the same coordinates from the <SlaveCam_image>.
         <SlaveCam_image> is the picture in .tif or .fit format to use to correct the values in the picture from the Master Cammera."
-        <configfile> is the config file where registration points are stored."
+        <configfile> is the config file where registration points are
+		stored."
+
+#Registration of the images:
+The config.cfg file has to be located in the same folder
+ where master and slave images are located, i.e. the program looks for
+ this file in the specified path in the arguments of the command line
+ in Linux/Mac. As for Windows, it also has to be located in the same
+ folder where the images are. This is to allow for different
+ config.cfg files for different set of images. Use the
+ config_example.cfg file provided here as a reference.
 
 #Windows install:
 
